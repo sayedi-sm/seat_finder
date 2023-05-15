@@ -13,9 +13,10 @@ class SeatsListView extends StatelessWidget {
   Widget build(BuildContext context) {
     final SeatFinderProvider provider =
         Provider.of<SeatFinderProvider>(context);
+
     return ScrollablePositionedList.separated(
       itemScrollController: provider.itemController,
-      padding: const EdgeInsets.all(8),
+      padding: const EdgeInsets.all(10),
       itemBuilder: (context, blockIndex) {
         return SizedBox(
           height: 175,
@@ -42,9 +43,6 @@ class SeatsListView extends StatelessWidget {
                                     rowIndex: rowIndex == 2 ? 1 : 0,
                                     seatIndex: seatIndex,
                                   ),
-                                  foundSeatIndex: provider.foundedSeatIndex,
-                                  areSeatLablesShown:
-                                      provider.areSeatLabelsShown,
                                 );
                               },
                             ),
@@ -68,8 +66,6 @@ class SeatsListView extends StatelessWidget {
                               blockIndex: blockIndex,
                               rowIndex: rowIndex == 2 ? 1 : 0,
                             ),
-                            foundSeatIndex: provider.foundedSeatIndex,
-                            areSeatLablesShown: provider.areSeatLabelsShown,
                           ),
                         ),
                 ),
@@ -78,7 +74,7 @@ class SeatsListView extends StatelessWidget {
           ),
         );
       },
-      separatorBuilder: (_, __) => const SizedBox(height: 18),
+      separatorBuilder: (_, __) => const SizedBox(height: 22),
       itemCount: 72 ~/ 8,
     );
   }

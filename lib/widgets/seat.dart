@@ -5,17 +5,17 @@ import 'package:seat_finder/providers/seat_finder_provider.dart';
 class Seat extends StatelessWidget {
   const Seat({
     required this.index,
-    required this.areSeatLablesShown,
-    this.foundSeatIndex,
     super.key,
   });
 
   final int index;
-  final int? foundSeatIndex;
-  final bool areSeatLablesShown;
 
   @override
   Widget build(BuildContext context) {
+    final SeatFinderProvider provider =
+        Provider.of<SeatFinderProvider>(context);
+    int? foundSeatIndex = provider.foundedSeatIndex;
+    bool areSeatLabelsShown = provider.areSeatLabelsShown;
     return Container(
       height: 70,
       width: 70,
@@ -37,7 +37,7 @@ class Seat extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            if (areSeatLablesShown || foundSeatIndex == index)
+            if (areSeatLabelsShown || foundSeatIndex == index)
               Text(
                 index.toString(),
                 style: TextStyle(

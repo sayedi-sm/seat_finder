@@ -8,7 +8,7 @@ class SeatDecorator extends CustomPainter {
   SeatDecorator({
     required this.color,
     required this.isTop,
-    this.strokeWidth = 8,
+    this.strokeWidth = 10,
   });
 
   @override

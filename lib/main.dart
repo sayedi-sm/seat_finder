@@ -21,9 +21,10 @@ class MyApp extends StatelessWidget {
           title: Strings.appTitle,
           theme: ThemeData(
             colorScheme: ColorScheme.fromSeed(
-                seedColor: const Color(0xFF2177CF),
-                brightness:
-                    provider.isLightMode ? Brightness.light : Brightness.dark),
+              seedColor: const Color(0xFF2177CF),
+              brightness:
+                  provider.isLightMode ? Brightness.light : Brightness.dark,
+            ),
             useMaterial3: true,
           ),
           debugShowCheckedModeBanner: false,
