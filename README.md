@@ -1,16 +1,6 @@
-# seat_finder
+# Seat Finder
 
-A new Flutter project.
+A flutter app which represents indain trains Sleeper Class (SL). It contains 72 seats with 5 different kinds of berths: lower, middle, upper, side lower, and side upper.
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Preview
+<img src="https://github.com/sayedi-sm/seat_finder/assets/59946442/e6ac575b-0945-4fce-9ef0-a9240d8bad48" width="250"/>
