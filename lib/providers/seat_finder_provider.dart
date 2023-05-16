@@ -3,7 +3,7 @@ import 'package:scrollable_positioned_list/scrollable_positioned_list.dart';
 
 class SeatFinderProvider extends ChangeNotifier {
   final TextEditingController findController = TextEditingController();
-  late final ItemScrollController itemController = ItemScrollController();
+  final ItemScrollController itemController = ItemScrollController();
 
   int? _foundedSeatIndex;
 
