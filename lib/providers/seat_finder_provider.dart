@@ -37,7 +37,6 @@ class SeatFinderProvider extends ChangeNotifier {
     itemController.scrollTo(
       index: (foundedSeatIndex! - 1) ~/ 8,
       duration: const Duration(milliseconds: 350),
-      curve: Curves.elasticInOut,
     );
   }
 
