@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:seat_finder/models/strings.dart';
-import 'package:seat_finder/providers/seat_finder_provider.dart';
-import 'package:seat_finder/screens/seat_finder_screen.dart';
 import 'package:provider/provider.dart';
+
+import 'models/models.dart';
+import 'providers/providers.dart';
+import 'screens/screens.dart';
 
 void main() {
   runApp(const MyApp());

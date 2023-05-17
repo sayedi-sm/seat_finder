@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:scrollable_positioned_list/scrollable_positioned_list.dart';
-import 'package:seat_finder/models/seat_decorator.dart';
 
-import '../providers/seat_finder_provider.dart';
-import 'seat.dart';
+import '../models/models.dart';
+import '../providers/providers.dart';
+import 'widgets.dart';
 
 class SeatsListView extends StatelessWidget {
   const SeatsListView({super.key});

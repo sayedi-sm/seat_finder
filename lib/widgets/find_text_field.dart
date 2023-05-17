@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:seat_finder/models/strings.dart';
-import 'package:seat_finder/providers/seat_finder_provider.dart';
+
+import '../models/models.dart';
+import '../providers/providers.dart';
 
 class FindTextField extends StatelessWidget {
   const FindTextField({super.key});

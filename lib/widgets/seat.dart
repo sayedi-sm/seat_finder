@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:seat_finder/providers/seat_finder_provider.dart';
+
+import '../providers/providers.dart';
 
 class Seat extends StatelessWidget {
   const Seat({
